@@ -33,3 +33,5 @@ dot checkout
 
 - `.zshrc` - Shell config, aliases
 - `.config/nvim/init.lua` - Neovim config (lazy.nvim, telescope, smart-open, lualine)
+- `.claude/settings.json` - Global Claude Code permissions and plugins
+- `.claude/CLAUDE.md` - Personal Claude Code instructions
