@@ -13,6 +13,20 @@ dot commit -m "add some-config-file"
 dot push
 ```
 
+## Prerequisites
+
+Ubuntu:
+
+```bash
+sudo apt update && sudo apt install -y zsh neovim && chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+macOS (requires [Homebrew](https://brew.sh)):
+
+```bash
+brew install neovim && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Setup on a new machine
 
 ```bash
