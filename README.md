@@ -15,16 +15,16 @@ dot push
 
 ## Prerequisites
 
-Ubuntu:
+Ubuntu (safe to run on minimal installs):
 
 ```bash
-sudo apt update && sudo apt install -y zsh neovim && chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt update && sudo apt install -y curl wget git zsh neovim tmux build-essential ca-certificates gnupg openssh-client iputils-ping net-tools dnsutils traceroute htop tree jq unzip software-properties-common && chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 macOS (requires [Homebrew](https://brew.sh)):
 
 ```bash
-brew install neovim && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+brew install neovim tmux wget htop tree jq && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Setup on a new machine
