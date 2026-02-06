@@ -34,6 +34,7 @@ git clone --bare https://github.com/harry-m/dotfiles.git ~/.dotfiles
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dot checkout
 dot config status.showUntrackedFiles no
+~/scripts/setup.sh
 ```
 
 If checkout fails due to existing files, back them up first:
@@ -49,3 +50,4 @@ dot checkout
 - `.config/nvim/init.lua` - Neovim config (lazy.nvim, telescope, smart-open, lualine)
 - `.claude/settings.json` - Global Claude Code permissions and plugins
 - `.claude/CLAUDE.md` - Personal Claude Code instructions
+- `scripts/setup.sh` - Post-clone machine setup (git config, neovim plugins)
