@@ -18,13 +18,13 @@ dot push
 Ubuntu (safe to run on minimal installs):
 
 ```bash
-sudo apt update && sudo apt install -y curl wget git zsh neovim tmux build-essential ca-certificates gnupg openssh-client iputils-ping net-tools dnsutils traceroute htop tree jq unzip software-properties-common && chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt update && sudo apt install -y curl wget git zsh neovim tmux build-essential ca-certificates gnupg openssh-client iputils-ping net-tools dnsutils traceroute htop tree jq unzip software-properties-common && curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - && sudo apt install -y nodejs && sudo npm install -g @anthropic-ai/claude-code && chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 macOS (requires [Homebrew](https://brew.sh)):
 
 ```bash
-brew install neovim tmux wget htop tree jq && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+brew install neovim tmux wget htop tree jq node && npm install -g @anthropic-ai/claude-code && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Setup on a new machine
